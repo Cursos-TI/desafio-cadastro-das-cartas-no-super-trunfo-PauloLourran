@@ -19,6 +19,8 @@ int main()
    int   pturisticos2;
    float pib2;
 
+      printf("Desafio Super Trunfo!\n\n");
+
    printf("Agora cadastre a carta um: \n");
     printf("Estado [A-H]: ");
       scanf("%c", &estado1);
@@ -26,7 +28,7 @@ int main()
       scanf("%s", codigo1);
     printf("Cidade:");
       scanf("%s", cidade1);
-    printf("População:");
+    printf("População:");        //cadastro da carta um sem bug
       scanf("%d", &populacao1);
     printf("Área em km²:");
       scanf("%f", &area1);
@@ -36,20 +38,20 @@ int main()
       scanf("%f ", &pib1);
 
    printf("Agora cadastre a carta dois: \n");
-    printf("Estado [A-H]:");
+    printf("Estado [A-H]: ");
       scanf("%s \n", estado2);
-    printf("Código da carta:");
+    printf("Código da carta: ");
       scanf("%s \n", codigo2);     
-    printf("Cidade:");                 
-      scanf("%s \n", cidade2);
-    printf("População:");
-      scanf("%d", &populacao2);
-    printf("Área em km:");
+    printf("Cidade: ");                 
+      scanf("%s \n", cidade2);      //cadastro da carta dois com bug
+    printf("População: ");           // o \n serviu para tirar o bug nas primeiras scanf
+      scanf("%d", &populacao2);     // nao consegui fazer o mesmo nas outras scanf
+    printf("Área em km²: ");
       scanf("%f", &area2);
-    printf("Pontos Turísticos:");
+    printf("Pontos Turísticos: ");
       scanf("%d", &pturisticos2);
-    printf("PIB:");
-      scanf("%f \n\n", &pib2);
+    printf("PIB: ");
+      scanf("%f", &pib2);
  //dados da carta um
     printf("Carta 1: \n");
     printf("Estado: %c \n", estado1);
