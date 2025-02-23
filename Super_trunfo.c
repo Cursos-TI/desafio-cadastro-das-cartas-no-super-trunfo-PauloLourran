@@ -39,8 +39,8 @@ int main()
     printf("Estado [A-H]:");
       scanf("%s \n", estado2);
     printf("Código da carta:");
-      scanf("%s \n", codigo2);
-    printf("Cidade:");
+      scanf("%s \n", codigo2);     
+    printf("Cidade:");                 
       scanf("%s \n", cidade2);
     printf("População:");
       scanf("%d", &populacao2);
