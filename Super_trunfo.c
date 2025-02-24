@@ -2,7 +2,7 @@
 
 int main()
 {
-   char  estado1;    
+   char  estado1 [2];    
    char  codigo1 [3];
    char  cidade1 [100];
    int   populacao1;
@@ -23,7 +23,7 @@ int main()
 
    printf("Agora cadastre a carta um: \n");
     printf("Estado [A-H]: ");
-      scanf("%c", &estado1);
+      scanf("%s", estado1);
     printf("Código da carta:");
       scanf("%s", codigo1);
     printf("Cidade:");
@@ -51,10 +51,10 @@ int main()
     printf("Pontos Turísticos: ");
       scanf("%d", &pturisticos2);
     printf("PIB: ");
-      scanf("%f", &pib2);
+      scanf("%f\n", &pib2);
  //dados da carta um
     printf("Carta 1: \n");
-    printf("Estado: %c \n", estado1);
+    printf("Estado: %s \n", estado1);
     printf("Código: %s \n", codigo1);
     printf("Cidade: %s \n", cidade1);
     printf("População: %d \n", populacao1);
